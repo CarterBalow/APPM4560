@@ -27,3 +27,5 @@ xlabel('Sample Size')
 ylabel('Estimated Probability')
 title('HW1: Monte Carlo Convergence')
 legend('Monte Carlo Estimate', 'Analytical Solution', 'Location', 'best');
+
+print(fig, 'APPM4560HW1_SimFig', '-dpng', '-r300')
