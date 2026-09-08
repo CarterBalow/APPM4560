@@ -21,6 +21,9 @@ emp_mean = mean(z_sim);
 emp_std = std(z_sim);
 emp_ratio = emp_std / emp_mean;
 
+min_core = min(C);
+max_core = max(C);
+
 fig = figure();
 fig.Theme = 'light';
 hold on;
