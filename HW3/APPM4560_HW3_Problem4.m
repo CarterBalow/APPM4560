@@ -76,5 +76,8 @@ ylabel('Survival Probability S_N(t)')
 title(sprintf('Lamb Survival Rate (Fit Window: 10^2 \x2264 t \x2264 10^4)\n\\beta_1 = %.3f, \\beta_2 = %.3f', beta_1, beta_2))
 legend('S_1(t) (Simulated)', 'S_1(t) (Continuum)', 'S_2(t) (Simulated)', 'S_1(t)^2', 'Location', 'best')
 grid on;
+ax = gca;
+ax.XScale = 'log';
+ax.YScale = 'log';
 
 print(fig, 'LambSurvivability', '-dpng', '-r300')
