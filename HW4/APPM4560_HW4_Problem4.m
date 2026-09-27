@@ -19,11 +19,10 @@ exact_tauA = [4, 7/3, 3.4];
 num_sims = 10^4;
 sim_data = struct();
 
-for s_idx = 1:3
+for s_idx = 1 : 3
     endings = zeros(num_sims, 1);
     times = zeros(num_sims, 1);
-    
-    for i = 1:num_sims
+    for i = 1 : num_sims
         curr_state = s_idx;
         steps = 0;
         while curr_state < 4
