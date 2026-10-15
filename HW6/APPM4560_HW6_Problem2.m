@@ -136,6 +136,8 @@ title('Keener Ratings');
 legend({'Flat', '2025', 'Poll'}, 'Location', 'Best');
 grid on;
 
+print(fig, 'RValsThreePriors', '-dpng', '-r300')
+
 
 %% Match predictions
 target_games = games2026(games2026.completed == 0, :);
