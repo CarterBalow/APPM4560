@@ -70,7 +70,7 @@ end
 %% Prior combos
 pi_flat = 0.5 * ones(m, m);
 
-si = [15; 12; 8; 14; 10; 9; 11; 7; 13; 6; 5; 4; 16; 3; 2; 1];
+si = [15; 12; 8; 14; 10; 9; 11; 7; 13; 6; 5; 4; 16; 3; 2; 1]; % random poll
 pi_poll = zeros(m, m);
 for i = 1 : m
     for j = 1 : m
